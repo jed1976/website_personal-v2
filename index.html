@@ -2,18 +2,26 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="/tachyons.min.css">
+    <style>
+    .sticky {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+
+    .relative { transform: translateZ(0); }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The personal site of Joe Dakroub, Digital Handyman.">
     <title>Joe Dakroub — Digital Handyman</title>
   </head>
   <body class="bg-washed-yellow sans-serif">
-    <article class="cover flex flex-column light-red justify-center ph4 pv5 min-vh-100" style="background-image: url('/intro.jpg'); background-position: center;">
+    <article class="cover flex flex-column light-red justify-center min-vh-100 ph4 pv5 sticky top-0" style="background-image: url('/intro.jpg'); background-position: center;">
       <h1 class="f2 f1-m f-subheadline-l ma0">Joe Dakroub</h1>
       <h2 class="f2 f1-m f-subheadline-l fw4 i ma0 mb5"><mark class="bg-light-red washed-yellow">Digital Handyman</mark></h2>
     </article>
 
-    <article class="bg-light-red f2 f1-m f-subheadline-l near-black pa4">
+    <article class="bg-light-red f2 f1-m f-subheadline-l near-black pa4 relative">
       <div class="center lh-copy mw8">
         <p>Hi, my name is <mark class="b bg-washed-yellow">Joe Dakroub</mark>.</p>
         <p>I have been in the digital business for <mark class="b bg-washed-yellow">over 20 years</mark>.</p>
@@ -25,12 +33,12 @@
       </div>
     </article>
 
-    <section>
-      <header class="cover flex items-center justify-center ph4 pv5 vh-100" style="background-image: url('/experience.jpg'); background-position: center; background-repeat: no-repeat">
+    <section class="relative">
+      <header class="cover flex items-center justify-center ph4 pv5 sticky top-0 vh-100" style="background-image: url('/experience.jpg'); background-position: center; background-repeat: no-repeat">
         <h2 class="f1 f-subheadline-m f-headline-l flex light-red ma0 ttu">Experience</h2>
       </header>
 
-      <article class="f2 f1-m f-subheadline-l min-vh-100 near-black pa4">
+      <article class="bg-washed-yellow f2 f1-m f-subheadline-l min-vh-100 near-black pa4 relative">
         <dl class="center ma0 mw7 pv5">
           <dt class="f2 f1-m f-subheadline-l fw7 light-red">
             Hand Whittled, LLC <br>
@@ -49,7 +57,7 @@
         </dl>
       </article>
 
-      <article class="bg-near-black f2 f1-m f-subheadline-l min-vh-100 pa4 washed-yellow">
+      <article class="bg-near-black f2 f1-m f-subheadline-l min-vh-100 pa4 relative washed-yellow">
         <dl class="center ma0 mw7 pv5">
             <dt class="f2 f1-m f-subheadline-l fw7 light-red">
             Tradeweb <br>
@@ -68,7 +76,7 @@
         </dl>
       </article>
 
-      <article class="bg-light-red f2 f1-m f-subheadline-l min-vh-100 pa4">
+      <article class="bg-light-red f2 f1-m f-subheadline-l min-vh-100 pa4 relative">
         <dl class="center ma0 mw7 pv5">
           <dt class="f2 f1-m f-subheadline-l fw7 washed-yellow">
             Quicken Loans <br>
@@ -87,7 +95,7 @@
         </dl>
       </article>
 
-      <article class="f2 f1-m f-subheadline-l min-vh-100 near-black pa4">
+      <article class="bg-washed-yellow f2 f1-m f-subheadline-l min-vh-100 near-black pa4 relative">
         <dl class="center ma0 mw7 pv5">
           <dt class="f2 f1-m f-subheadline-l fw7 light-red">
             LDM Technologies <br>
@@ -104,7 +112,7 @@
         </dl>
       </article>
 
-      <article class="bg-near-black f2 f1-m f-subheadline-l min-vh-100 pa4 washed-yellow">
+      <article class="bg-near-black f2 f1-m f-subheadline-l min-vh-100 pa4 relative washed-yellow">
         <dl class="center ma0 mw7 pv5">
             <dt class="f2 f1-m f-subheadline-l fw7 light-red">
             Powersurge <br>
@@ -123,12 +131,12 @@
       </article>
     </section>
 
-    <section>
-      <header class="cover flex items-center justify-center ph4 pv5 vh-100" style="background-image: url('/education.jpg'); background-position: center; background-repeat: no-repeat">
+    <section class="relative">
+      <header class="cover flex items-center justify-center ph4 pv5 sticky top-0 vh-100" style="background-image: url('/education.jpg'); background-position: center; background-repeat: no-repeat">
         <h2 class="f1 f-subheadline-m f-headline-l flex light-red ma0 ttu">Education</h2>
       </header>
 
-      <article class="bg-near-black f2 f1-m f-subheadline-l flex flex-column items-center justify-center light-red min-vh-100 ph4 pv5 tc">
+      <article class="bg-near-black f2 f1-m f-subheadline-l flex flex-column items-center justify-center light-red min-vh-100 ph4 pv5 relative tc">
         <p class="center fw7 ma0 mb5 mw8">
           <mark class="bg-light-red near-black">University of Michigan - Flint</mark> <br>
           1994-2000
@@ -141,7 +149,7 @@
         </p>
       </article>
 
-      <article class="bg-washed-yellow f2 f1-m f-subheadline-l flex flex-column items-center justify-center min-vh-100 near-black ph4 pv5 tc">
+      <article class="bg-washed-yellow f2 f1-m f-subheadline-l flex flex-column items-center justify-center min-vh-100 near-black ph4 pv5 relative tc">
         <p class="center fw7 ma0 mb5 mw8">
           <mark class="bg-near-black washed-yellow">Clarkston Senior High School</mark> <br>
           1990-1994
@@ -153,12 +161,12 @@
       </article>
     </section>
 
-    <section>
-      <header class="cover flex items-center justify-center ph4 pv5 vh-100" style="background-image: url('/skills.jpg'); background-position: center; background-repeat: no-repeat">
+    <section class="relative">
+      <header class="cover flex items-center justify-center ph4 pv5 sticky top-0 vh-100" style="background-image: url('/skills.jpg'); background-position: center; background-repeat: no-repeat">
         <h2 class="f1 f-subheadline-m f-headline-l flex light-red ma0 ttu">Services</h2>
       </header>
 
-      <article class="min-vh-100 pa4">
+      <article class="bg-washed-yellow min-vh-100 pa4 relative">
         <ul class="center f3 fw7 flex flex-wrap lh-title list ma0 pa0 mw8">
           <li class="mb3 w-100 w-50-ns">HTML</li>
           <li class="mb3 w-100 w-50-ns">CSS</li>
@@ -208,12 +216,12 @@
       </article>
     </section>
 
-    <section>
-      <header class="bg-center cover flex items-center justify-center ph4 pv5 vh-100" style="background-image: url('/projects.jpg'); background-repeat: no-repeat">
+    <section class="relative">
+      <header class="bg-center cover flex items-center justify-center ph4 pv5 sticky top-0 vh-100" style="background-image: url('/projects.jpg'); background-repeat: no-repeat">
         <h2 class="f1 f-subheadline-m f-headline-l flex light-red ma0 ttu">Projects</h2>
       </header>
 
-      <div class="bg-near-black flex flex-wrap ph4 pv6 w-100">
+      <div class="bg-near-black flex flex-wrap ph4 pv6 relative w-100">
         <article class="mb4 pa2-ns w-100 w-50-ns">
           <a href="http://gladmin.webfactional.com" class="link db">
             <figure class="aspect-ratio aspect-ratio--1x1 ma0 mb3">
@@ -330,62 +338,64 @@
       </div>
     </section>
 
-    <section>
-      <header class="cover flex items-center justify-center ph4 pv5 vh-100" style="background-image: url('/clients.jpg'); background-position: center top; background-repeat: no-repeat">
+    <section class="relative">
+      <header class="cover flex items-center justify-center ph4 pv5 sticky top-0 vh-100" style="background-image: url('/clients.jpg'); background-position: center top; background-repeat: no-repeat">
         <h2 class="f1 f-subheadline-m f-headline-l flex light-red ma0 ttu">Clients</h2>
       </header>
 
-      <article class="center flex flex-wrap items-center justify-center mw8 ph4 pv5">
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-ql.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-maxcdn.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-tradeweb.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-motor.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-team-detroit.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-warrior.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-scotts.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-bosch.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-organic.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-dubspot.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-brilliant-chemistry.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-glsm.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-access-outdoor-storage.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-rentalbug.png">
-        </figure>
-        <figure class="ma0 pa4 w-100 w-50-ns">
-          <img alt="" class="w-100" src="/logo-kssg.jpg">
-        </figure>
+      <article class="bg-washed-yellow relative">
+        <div class="center flex flex-wrap items-center justify-center mw8 ph4 pv5 ">
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-ql.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-maxcdn.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-tradeweb.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-motor.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-team-detroit.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-warrior.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-scotts.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-bosch.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-organic.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-dubspot.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-brilliant-chemistry.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-glsm.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-access-outdoor-storage.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-rentalbug.png">
+          </figure>
+          <figure class="ma0 pa4 w-100 w-50-ns">
+            <img alt="" class="w-100" src="/logo-kssg.jpg">
+          </figure>
+        </div>
       </article>
     </section>
 
-    <section>
-      <article class="cover flex flex-column items-start justify-center ph4 pv5 vh-100" style="background-image: url('/contact.jpg'); background-position: center bottom; background-repeat: no-repeat">
+    <section class="relative">
+      <article class="cover flex flex-column items-start justify-center ph4 pv5 sticky top-0 vh-100" style="background-image: url('/contact.jpg'); background-position: center bottom; background-repeat: no-repeat">
         <h6 class="f2 f1-m f-subheadline-l ma0 tc ttu">
           <a class="hover-washed-yellow light-red ma0" href="mailto:joe.dakroub@me.com">Email</a>
         </h6>
